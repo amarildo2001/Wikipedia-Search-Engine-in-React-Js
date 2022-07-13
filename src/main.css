@@ -1,0 +1,255 @@
+
+.button-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.button,
+.button:visited,
+.button:hover,
+.button:active,
+.button:focus {
+  background: #F48947;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: change-color(black, lightness 20%);
+  cursor: pointer;
+  letter-spacing: 1px;
+  line-height: normal;
+  margin: 0 5px;
+  padding: 5px 8px;
+  width: auto;
+}  
+  button:hover {
+    background: transparent;
+    color: white;
+    text-decoration: none;
+  }
+
+
+input {
+  border: 0;
+  border-radius: 0;
+  color: change-color(black, lightness 20%);
+  letter-spacing: 1px;
+  line-height: 1.3;
+  padding: 10px;
+  width: 100%;
+  font-size: 120%;
+}
+
+.search-form {
+  padding: 20px; }
+.form-group {
+    margin: 0 auto;
+    max-width: 500px;
+    position: relative;
+}
+.search-icon {
+      color: change-color(black, lightness 20%);
+      left: 10px;
+      position: absolute;
+      top: 12px;
+}
+    .search-input {
+      border-radius: 30px;
+      padding-left: 35px;
+    }
+
+  .button-group {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-top: 15px;
+  }
+
+
+
+.search-results .result-item {
+  background: rgba(change-color(black, lightness 5%), 0.2);
+  margin: 20px auto 0;
+  max-width: 650px;
+  padding: 20px;
+  text-align: left;
+}
+  h2 {
+    font-family: wiki-font;
+    font-size: 1.6rem;
+    letter-spacing: 3px;
+  }
+  p {
+    line-height: 1.35;
+    padding-bottom: 10px;
+  }
+
+
+
+.loading-spinner {
+  -webkit-animation: spin 0.75s linear infinite;
+  animation: spin 0.75s linear infinite;
+  border: 4px solid #F48947;
+  border-top: 4px solid transparent;
+  border-radius: 50%;
+  height: 30px;
+  margin: 3% auto;
+  width: 30px;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  background: transparent;
+  height: 100%;
+  letter-spacing: 1px;
+  text-align: center;
+}
+  body {
+    background: change-color(black, lightness 20%);
+    background: -o-linear-gradient(330deg, change-color(black, lightness 15%), change-color(black, lightness 30%)) fixed;
+    background: linear-gradient(120deg, change-color(black, lightness 15%), change-color(black, lightness 30%)) fixed;
+    color: change-color(black, lightness 100%);
+    min-height: 100%;
+    -ms-scroll-chaining: none;
+    overscroll-behavior: none;
+    padding: 0 20px;
+    position: relative;
+  }
+    header {
+      padding-top: 10px;
+    }
+    main {
+      padding: 10% 0 6rem;
+    }
+    footer {
+      background: rgba(change-color(black, lightness 5%), 0.2);
+      bottom: 0;
+      font-size: 0.8rem;
+      left: 0;
+      letter-spacing: 2px;
+      padding: 14px 0;
+      position: absolute;
+      right: 0;
+      width: 100%;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-top: 0;
+    }
+    h1 {
+      font-family: wiki-font;
+      font-size: 1.5rem;
+      font-variant: small-caps;
+      text-align: left;
+    }
+  
+
+
+a,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+  color:  #C70039;
+  text-decoration: none;
+}
+  a:hover {
+    text-decoration: underline;
+  }
+
+
+a:focus,
+button:focus,
+details:focus,
+input:focus,
+select:focus,
+textarea:focus,
+[tabindex]:focus {
+  -webkit-box-shadow: 0 0 3px 3px hsla(203, 95%, 62%, 0.8);
+  box-shadow: 0 0 3px 3px hsla(203, 95%, 62%, 0.8);
+  outline: none;
+}
+
+.page-not-found-message {
+}
+  h1 {
+    font-size: 2rem;
+    letter-spacing: 2.5px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+
+
+.message {
+  border-radius: 5px;
+  line-height: 1.55;
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 15px 10px;
+}
+
+.error-message {
+  background: change-color(error-red, lightness 95%);
+  border: 1px solid change-color(error-red, lightness 90%);
+  color: error-red;
+}
+
+.info-message {
+  background: change-color(info-blue, lightness 95%);
+  border: 1px solid change-color(info-blue, lightness 90%);
+  color: info-blue;
+}
+
+noscript .info-message {
+  left: 50%;
+  margin: 0 auto;
+  min-width: 280px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+@import "main";
+
+.txt1{
+  color:#F48947;
+  font-size: 350%;
+}
